@@ -1,12 +1,8 @@
-# gatsby-starter-hello-world
-Starter with the bare essentials needed for a [Gatsby](https://www.gatsbyjs.org/) site.
+# grace-commercial
+A site that will contain all of grace's favorite commercials,
 
-Install this starter (assuming Gatsby is installed) by running from your CLI:
-```
-gatsby new gatsby-site https://github.com/gatsbyjs/gatsby-starter-hello-world
-```
+Also gives me an opportunity to try out some unique workflows.
 
-Or [view the live demo here](https://gatsby-starter-hello-world-demo.netlify.com/).
+Built with Gatsby.js and Netlify.
 
-## Running in development
-`gatsby develop`
+Stay tuned for more!
