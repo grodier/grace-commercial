@@ -8,6 +8,7 @@
     "build": "gatsby build",
     "serve": "gatsby serve",
     "lint": "eslint --ext js,jsx src",
+    "lint:fix": "eslint --fix --ext js,jsx src",
     "format": "npm run prettier -- --write",
     "prettier": "prettier \"**/*.+(js|jsx)\"",
     "validate": "npm run lint && npm run prettier -- --list-different",
