@@ -7,9 +7,9 @@ module.exports = {
         exclude: /(node_modules|cache|public)/,
         options: {
           emitWarning: true,
-          failOnError: true
-        }
-      }
-    }
-  ]
-}
+          failOnError: true,
+        },
+      },
+    },
+  ],
+};
