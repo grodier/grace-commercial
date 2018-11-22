@@ -2,5 +2,16 @@
   "extends": [
     "airbnb",
     "eslint-config-prettier"
-  ]
+  ],
+  "rules": {
+    "linebreak-style": "off",
+    "react/jsx-one-expression-per-line": [
+      "off",
+      {
+        "allow": "single-chile"
+      }
+    ],
+    "react/no-unescaped-entities": "off",
+    "react/prop-types":"off"
+  }
 }

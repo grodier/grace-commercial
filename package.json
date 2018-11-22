@@ -8,15 +8,19 @@
     "build": "gatsby build",
     "serve": "gatsby serve",
     "lint": "eslint --ext js,jsx src",
+    "lint:fix": "eslint --fix --ext js,jsx src",
     "format": "npm run prettier -- --write",
     "prettier": "prettier \"**/*.+(js|jsx)\"",
     "validate": "npm run lint && npm run prettier -- --list-different",
     "precommit": "lint-staged"
   },
   "dependencies": {
+    "babel-plugin-styled-components": "^1.8.0",
     "gatsby": "^2.0.33",
+    "gatsby-plugin-styled-components": "^3.0.3",
     "react": "^16.5.1",
-    "react-dom": "^16.5.1"
+    "react-dom": "^16.5.1",
+    "styled-components": "^4.1.1"
   },
   "devDependencies": {
     "eslint": "^5.9.0",
