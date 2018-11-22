@@ -1,8 +1,21 @@
 import React from 'react';
+import {createGlobalStyle} from 'styled-components';
+
+const GlobalStyle = createGlobalStyle`
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+body {
+  font-family: sans-serif;
+}`;
 
 function Hello() {
   return (
     <>
+      <GlobalStyle />
       <header>
         <h1>Grace's Favorite Commercials</h1>
       </header>
