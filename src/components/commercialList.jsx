@@ -57,10 +57,16 @@ const ListItem = styled.li`
   box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
 `;
 
-function CommercialItem({commercial}) {
+function CommercialItem({commercial, selectCommercial}) {
   return (
     <ListItem>
-      <ListAnchor href={commercial.youtubeLink}>
+      <ListAnchor
+        href={commercial.youtubeLink}
+        onClick={e => {
+          e.preventDefault();
+          selectCommercial(commercial);
+        }}
+      >
         <ListImg alt={commercial.title} src={commercial.thumbnail} />
         <ListTitle>{commercial.title}</ListTitle>
       </ListAnchor>
@@ -68,9 +74,13 @@ function CommercialItem({commercial}) {
   );
 }
 
-function CommercialList({commercials}) {
+function CommercialList({commercials, selectCommercial}) {
   const commercialItems = commercials.map(commercial => (
-    <CommercialItem key={commercial.id} commercial={commercial} />
+    <CommercialItem
+      key={commercial.id}
+      commercial={commercial}
+      selectCommercial={selectCommercial}
+    />
   ));
 
   return (
