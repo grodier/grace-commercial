@@ -25,6 +25,9 @@ const VidContentArea = styled.div`
   max-width: 960px;
   max-height: 540px;
   margin: 0 auto;
+  border-radius: 11px;
+  overflow: hidden;
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
 `;
 
 function VideoSection({commercial}) {
