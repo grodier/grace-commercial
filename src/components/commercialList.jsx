@@ -74,6 +74,10 @@ function CommercialItem({commercial, selectCommercial}) {
   );
 }
 
+const CommercialListGroup = styled.ul`
+  text-align: center;
+`;
+
 function CommercialList({commercials, selectCommercial}) {
   const commercialItems = commercials.map(commercial => (
     <CommercialItem
@@ -86,7 +90,7 @@ function CommercialList({commercials, selectCommercial}) {
   return (
     <section>
       <h2>Commercials</h2>
-      <ul>{commercialItems}</ul>
+      <CommercialListGroup>{commercialItems}</CommercialListGroup>
     </section>
   );
 }
