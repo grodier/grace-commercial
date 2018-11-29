@@ -1,4 +1,5 @@
 import React from 'react';
+import styled from 'styled-components';
 import VideoSection from './videoSection';
 import CommercialList from './commercialList';
 
@@ -53,6 +54,11 @@ const commercials = [
   },
 ];
 
+const MainContent = styled.main`
+  max-width: 1200px;
+  margin: 0 auto;
+`;
+
 class Main extends React.Component {
   constructor(props) {
     super(props);
@@ -75,13 +81,13 @@ class Main extends React.Component {
   render() {
     const {selectedCommerical} = this.state;
     return (
-      <main>
+      <MainContent>
         <VideoSection commercial={selectedCommerical} />
         <CommercialList
           commercials={commercials}
           selectCommercial={commercial => this.selectCommerical(commercial)}
         />
-      </main>
+      </MainContent>
     );
   }
 }

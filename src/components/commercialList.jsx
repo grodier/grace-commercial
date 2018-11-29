@@ -76,6 +76,7 @@ function CommercialItem({commercial, selectCommercial}) {
 
 const CommercialListGroup = styled.ul`
   text-align: center;
+  padding-left: 0px;
 `;
 
 function CommercialList({commercials, selectCommercial}) {
