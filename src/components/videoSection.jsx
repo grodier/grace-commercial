@@ -30,25 +30,23 @@ const VidContentArea = styled.div`
   box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
 `;
 
-function VideoSection({commercial}) {
-  return (
-    <section>
-      <h2>{commercial.title}</h2>
-      <VidContentArea>
-        <VidResponsiveWrapper>
-          <VidFrame
-            title={commercial.title}
-            width="853"
-            height="505"
-            src={`https://www.youtube.com/embed/${commercial.id}`}
-            frameBorder="0"
-            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-            allowFullScreen
-          />
-        </VidResponsiveWrapper>
-      </VidContentArea>
-    </section>
-  );
-}
+const VideoSection = React.forwardRef(({commercial}, ref) => (
+  <section>
+    <h2 ref={ref}>{commercial.title}</h2>
+    <VidContentArea>
+      <VidResponsiveWrapper>
+        <VidFrame
+          title={commercial.title}
+          width="853"
+          height="505"
+          src={`https://www.youtube.com/embed/${commercial.id}`}
+          frameBorder="0"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen
+        />
+      </VidResponsiveWrapper>
+    </VidContentArea>
+  </section>
+));
 
 export default VideoSection;

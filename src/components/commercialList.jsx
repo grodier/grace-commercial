@@ -57,7 +57,7 @@ const ListItem = styled.li`
   box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
 `;
 
-function CommercialItem({commercial, selectCommercial}) {
+function CommercialItem({commercial, selectCommercial, scrollToVideo}) {
   return (
     <ListItem>
       <ListAnchor
@@ -65,6 +65,7 @@ function CommercialItem({commercial, selectCommercial}) {
         onClick={e => {
           e.preventDefault();
           selectCommercial(commercial);
+          scrollToVideo();
         }}
       >
         <ListImg alt={commercial.title} src={commercial.thumbnail} />
@@ -79,12 +80,13 @@ const CommercialListGroup = styled.ul`
   padding-left: 0px;
 `;
 
-function CommercialList({commercials, selectCommercial}) {
+function CommercialList({commercials, selectCommercial, scrollToVideo}) {
   const commercialItems = commercials.map(commercial => (
     <CommercialItem
       key={commercial.id}
       commercial={commercial}
       selectCommercial={selectCommercial}
+      scrollToVideo={scrollToVideo}
     />
   ));
 

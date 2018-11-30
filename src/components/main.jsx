@@ -68,6 +68,9 @@ const MainContent = styled.main`
 class Main extends React.Component {
   constructor(props) {
     super(props);
+
+    this.elementRef = React.createRef();
+
     this.state = {
       selectedCommerical: {
         id: 'V3qtndbZh3s',
@@ -84,14 +87,21 @@ class Main extends React.Component {
     });
   }
 
+  scrollToComponent() {
+    this.elementRef.current.scrollIntoView({
+      behavior: 'smooth',
+    });
+  }
+
   render() {
     const {selectedCommerical} = this.state;
     return (
       <MainContent>
-        <VideoSection commercial={selectedCommerical} />
+        <VideoSection ref={this.elementRef} commercial={selectedCommerical} />
         <CommercialList
           commercials={commercials}
           selectCommercial={commercial => this.selectCommerical(commercial)}
+          scrollToVideo={() => this.scrollToComponent()}
         />
       </MainContent>
     );
