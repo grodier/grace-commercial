@@ -52,6 +52,7 @@ const ListItem = styled.li`
   height: 230px;
   margin: 10px;
   display: inline-block;
+  vertical-align: top;
   border-radius: 11px;
   overflow: hidden;
   box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
