@@ -6,7 +6,7 @@ const ListTitle = styled.h3`
   margin: 0 auto;
   top: 50%;
   color: white;
-  visibility: hidden;
+  opacity: 0;
   text-align: center;
 `;
 
@@ -38,7 +38,6 @@ const ListAnchor = styled.a`
   }
 
   :hover ${ListTitle}, :focus ${ListTitle} {
-    visibility: visible;
     opacity: 1;
   }
 
