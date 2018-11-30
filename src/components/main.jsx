@@ -52,6 +52,12 @@ const commercials = [
     thumbnail: 'https://img.youtube.com/vi/D8Cb5Wk2t-8/hqdefault.jpg',
     youtubeLink: 'https://youtube.com',
   },
+  {
+    id: 'RceKoQQlf_o',
+    title: 'Pixel 3 Top Shot',
+    thumbnail: 'https://img.youtube.com/vi/RceKoQQlf_o/hqdefault.jpg',
+    youtubeLink: 'https://youtube.com',
+  },
 ];
 
 const MainContent = styled.main`
