@@ -1,5 +1,6 @@
 import React from 'react';
 import {createGlobalStyle} from 'styled-components';
+import {Helmet} from 'react-helmet';
 
 import Header from '../components/header';
 import Main from '../components/main';
@@ -19,6 +20,9 @@ const GlobalStyle = createGlobalStyle`
 function Hello() {
   return (
     <>
+      <Helmet>
+        <title>Grace's Favorite Commercials</title>
+      </Helmet>
       <GlobalStyle />
       <Header />
       <Main />

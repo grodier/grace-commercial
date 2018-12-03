@@ -6,7 +6,7 @@ const ListTitle = styled.h3`
   margin: 0 auto;
   top: 50%;
   color: white;
-  visibility: hidden;
+  opacity: 0;
   text-align: center;
 `;
 
@@ -38,7 +38,6 @@ const ListAnchor = styled.a`
   }
 
   :hover ${ListTitle}, :focus ${ListTitle} {
-    visibility: visible;
     opacity: 1;
   }
 
@@ -52,12 +51,13 @@ const ListItem = styled.li`
   height: 230px;
   margin: 10px;
   display: inline-block;
-  border-radius: 5%;
+  vertical-align: top;
+  border-radius: 11px;
   overflow: hidden;
   box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
 `;
 
-function CommercialItem({commercial, selectCommercial}) {
+function CommercialItem({commercial, selectCommercial, scrollToVideo}) {
   return (
     <ListItem>
       <ListAnchor
@@ -65,6 +65,7 @@ function CommercialItem({commercial, selectCommercial}) {
         onClick={e => {
           e.preventDefault();
           selectCommercial(commercial);
+          scrollToVideo();
         }}
       >
         <ListImg alt={commercial.title} src={commercial.thumbnail} />
@@ -79,12 +80,13 @@ const CommercialListGroup = styled.ul`
   padding-left: 0px;
 `;
 
-function CommercialList({commercials, selectCommercial}) {
+function CommercialList({commercials, selectCommercial, scrollToVideo}) {
   const commercialItems = commercials.map(commercial => (
     <CommercialItem
       key={commercial.id}
       commercial={commercial}
       selectCommercial={selectCommercial}
+      scrollToVideo={scrollToVideo}
     />
   ));
 

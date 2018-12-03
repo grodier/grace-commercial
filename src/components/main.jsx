@@ -52,6 +52,24 @@ const commercials = [
     thumbnail: 'https://img.youtube.com/vi/D8Cb5Wk2t-8/hqdefault.jpg',
     youtubeLink: 'https://youtube.com',
   },
+  {
+    id: 'RceKoQQlf_o',
+    title: 'Pixel 3 Top Shot',
+    thumbnail: 'https://img.youtube.com/vi/RceKoQQlf_o/hqdefault.jpg',
+    youtubeLink: 'https://youtube.com',
+  },
+  {
+    id: 'NLTKvGgTb10',
+    title: 'Progressive: Future Son',
+    thumbnail: 'https://img.youtube.com/vi/NLTKvGgTb10/hqdefault.jpg',
+    youtubeLink: 'https://youtube.com',
+  },
+  {
+    id: 'BsqRfqkN9XM',
+    title: 'GIECO: Alexander Graham Bell',
+    thumbnail: 'https://img.youtube.com/vi/BsqRfqkN9XM/hqdefault.jpg',
+    youtubeLink: 'https://youtube.com',
+  },
 ];
 
 const MainContent = styled.main`
@@ -62,6 +80,10 @@ const MainContent = styled.main`
 class Main extends React.Component {
   constructor(props) {
     super(props);
+
+    this.elementRef = React.createRef();
+    this.videoRef = React.createRef();
+
     this.state = {
       selectedCommerical: {
         id: 'V3qtndbZh3s',
@@ -78,14 +100,22 @@ class Main extends React.Component {
     });
   }
 
+  scrollToComponent() {
+    this.elementRef.current.scrollIntoView({
+      behavior: 'smooth',
+    });
+    this.elementRef.current.focus();
+  }
+
   render() {
     const {selectedCommerical} = this.state;
     return (
       <MainContent>
-        <VideoSection commercial={selectedCommerical} />
+        <VideoSection ref={this.elementRef} commercial={selectedCommerical} />
         <CommercialList
           commercials={commercials}
           selectCommercial={commercial => this.selectCommerical(commercial)}
+          scrollToVideo={() => this.scrollToComponent()}
         />
       </MainContent>
     );
