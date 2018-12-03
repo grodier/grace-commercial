@@ -32,10 +32,11 @@ const VidContentArea = styled.div`
 
 const VideoSection = React.forwardRef(({commercial}, ref) => (
   <section>
-    <h2 ref={ref}>{commercial.title}</h2>
+    <h2>{commercial.title}</h2>
     <VidContentArea>
       <VidResponsiveWrapper>
         <VidFrame
+          ref={ref}
           title={commercial.title}
           width="853"
           height="505"
