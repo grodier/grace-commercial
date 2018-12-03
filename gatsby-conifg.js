@@ -11,21 +11,6 @@ module.exports = {
         },
       },
     },
-    {
-      resolve: 'gatsby-plugin-prefetch-google-fonts',
-      options: {
-        fonts: [
-          {
-            family: 'Sacramento',
-            variants: ['400'],
-          },
-          {
-            family: 'Open Sans',
-            variants: ['600'],
-          },
-        ],
-      },
-    },
     'gatsby-plugin-styled-components',
     'gatsby-plugin-react-helmet',
   ],
