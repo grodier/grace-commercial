@@ -1,9 +1,17 @@
 import React from 'react';
+import styled from 'styled-components';
+
+const StyledHeader = styled.h1`
+  font-family: 'Sacramento', cursive;
+  font-size: 3em;
+  margin: 0 auto;
+  text-align: center;
+`;
 
 function Header() {
   return (
     <header>
-      <h1>Grace's Favorite Commercials</h1>
+      <StyledHeader>Grace's Favorite Commercials</StyledHeader>
     </header>
   );
 }
