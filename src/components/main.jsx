@@ -1,10 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
-import smoothscroll from 'smoothscroll-polyfill';
 import VideoSection from './videoSection';
 import CommercialList from './commercialList';
-
-smoothscroll.polyfill();
 
 const commercials = [
   {
