@@ -2,12 +2,15 @@ import React from 'react';
 import styled from 'styled-components';
 
 const ListTitle = styled.h3`
+  text-align: center;
+  opacity: 0;
   position: relative;
   margin: 0 auto;
+  padding: 10px;
   top: 50%;
   color: white;
   opacity: 0;
-  text-align: center;
+  transform: translateY(-50%);
 `;
 
 const ListImg = styled.img`
@@ -20,7 +23,7 @@ const ListImg = styled.img`
 `;
 
 const ListAnchor = styled.a`
-  position: relative;
+  position: absolute;
   display: block;
   width: 100%;
   height: 100%;
@@ -47,14 +50,20 @@ const ListAnchor = styled.a`
 `;
 
 const ListItem = styled.li`
-  width: 230px;
-  height: 230px;
+  width: 134px;
+  height: 134px;
   margin: 10px;
   display: inline-block;
   vertical-align: top;
   border-radius: 11px;
   overflow: hidden;
   box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+  position: relative;
+
+  @media (min-width: 51em) {
+    width: 230px;
+    height: 230px;
+  }
 `;
 
 function CommercialItem({commercial, selectCommercial, scrollToVideo}) {
