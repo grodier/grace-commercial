@@ -66,7 +66,7 @@ const commercials = [
   },
   {
     id: 'BsqRfqkN9XM',
-    title: 'GIECO: Alexander Graham Bell',
+    title: 'GEICO: Alexander Graham Bell',
     thumbnail: 'https://img.youtube.com/vi/BsqRfqkN9XM/hqdefault.jpg',
     youtubeLink: 'https://youtube.com',
   },

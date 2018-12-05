@@ -18,6 +18,7 @@ const GlobalStyle = createGlobalStyle`
     font-family: 'Open Sans', sans-serif;
     background-color: #F8F8FF;
     color: #212121;
+    margin: 0 1em 0;
   }
   h2 {
     border-width: 2px 0 0 2px;
