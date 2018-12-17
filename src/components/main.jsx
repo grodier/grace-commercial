@@ -82,6 +82,12 @@ const commercials = [
     thumbnail: 'https://img.youtube.com/vi/X2cs8gnb42A/hqdefault.jpg',
     youtubeLink: 'https://youtube.com',
   },
+  {
+    id: 'bwz9X6ejuiQ',
+    title: 'McGruff Fights Baby Talk',
+    thumbnail: 'https://img.youtube.com/vi/bwz9X6ejuiQ/hqdefault.jpg',
+    youtubeLink: 'https://youtube.com',
+  },
 ];
 
 const MainContent = styled.main`
