@@ -65,9 +65,21 @@ const commercials = [
     youtubeLink: 'https://youtube.com',
   },
   {
-    id: 'BsqRfqkN9XM',
+    id: 'KsBWwj3uKZ0',
     title: 'GEICO: Alexander Graham Bell',
-    thumbnail: 'https://img.youtube.com/vi/BsqRfqkN9XM/hqdefault.jpg',
+    thumbnail: 'https://img.youtube.com/vi/KsBWwj3uKZ0/hqdefault.jpg',
+    youtubeLink: 'https://youtube.com',
+  },
+  {
+    id: 'CH9yvMGeHfo',
+    title: 'Washington Crossing the Delaware',
+    thumbnail: 'https://img.youtube.com/vi/CH9yvMGeHfo/hqdefault.jpg',
+    youtubeLink: 'https://youtube.com',
+  },
+  {
+    id: 'X2cs8gnb42A',
+    title: 'The Tide Stain',
+    thumbnail: 'https://img.youtube.com/vi/X2cs8gnb42A/hqdefault.jpg',
     youtubeLink: 'https://youtube.com',
   },
 ];
