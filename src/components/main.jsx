@@ -5,9 +5,21 @@ import CommercialList from './commercialList';
 
 const commercials = [
   {
+    id: 'GNggrti5SQ8',
+    title: "Spy: It's What You Do - GEICO",
+    thumbnail: 'https://img.youtube.com/vi/GNggrti5SQ8/hqdefault.jpg',
+    youtubeLink: 'https://youtube.com',
+  },
+  {
     id: 'V3qtndbZh3s',
     title: 'Ahoy',
     thumbnail: 'https://img.youtube.com/vi/V3qtndbZh3s/hqdefault.jpg',
+    youtubeLink: 'https://youtube.com',
+  },
+  {
+    id: 'xKYABI-dGEA',
+    title: 'Home Alone Again with the Google Assistant',
+    thumbnail: 'https://img.youtube.com/vi/xKYABI-dGEA/hqdefault.jpg',
     youtubeLink: 'https://youtube.com',
   },
   {
@@ -23,9 +35,9 @@ const commercials = [
     youtubeLink: 'https://youtube.com',
   },
   {
-    id: 'W27bN29GFhs',
+    id: 'lFOsH3aL5Co',
     title: 'Santander Pig',
-    thumbnail: 'https://img.youtube.com/vi/W27bN29GFhs/hqdefault.jpg',
+    thumbnail: 'https://img.youtube.com/vi/lFOsH3aL5Co/hqdefault.jpg',
     youtubeLink: 'https://youtube.com',
   },
   {
@@ -47,9 +59,9 @@ const commercials = [
     youtubeLink: 'https://youtube.com',
   },
   {
-    id: 'D8Cb5Wk2t-8',
+    id: 'boD27Qq9kJw',
     title: 'Dilly Dilly',
-    thumbnail: 'https://img.youtube.com/vi/D8Cb5Wk2t-8/hqdefault.jpg',
+    thumbnail: 'https://img.youtube.com/vi/boD27Qq9kJw/hqdefault.jpg',
     youtubeLink: 'https://youtube.com',
   },
   {
@@ -71,9 +83,9 @@ const commercials = [
     youtubeLink: 'https://youtube.com',
   },
   {
-    id: 'CH9yvMGeHfo',
+    id: 'Zpi0cMQEBbA',
     title: 'Washington Crossing the Delaware',
-    thumbnail: 'https://img.youtube.com/vi/CH9yvMGeHfo/hqdefault.jpg',
+    thumbnail: 'https://img.youtube.com/vi/Zpi0cMQEBbA/hqdefault.jpg',
     youtubeLink: 'https://youtube.com',
   },
   {
@@ -104,9 +116,9 @@ class Main extends React.Component {
 
     this.state = {
       selectedCommerical: {
-        id: 'V3qtndbZh3s',
-        title: 'Ahoy',
-        thumbnail: 'https://img.youtube.com/vi/V3qtndbZh3s/hqdefault.jpg',
+        id: 'GNggrti5SQ8',
+        title: "Spy: It's What You Do - GEICO",
+        thumbnail: 'https://img.youtube.com/vi/GNggrti5SQ8/hqdefault.jpg',
         youtubeLink: 'https://youtube.com',
       },
     };
